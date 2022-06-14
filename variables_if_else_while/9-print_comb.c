@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints all digits in base 10 from 0 to 9..
+ * main - Prints all digits in base 10 from 0 to 9
+ * with a certain format comma separated.
  *
  * Return: Always returns 0.
  */
