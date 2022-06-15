@@ -8,7 +8,7 @@
 int main(void)
 {	
 	
-	_putchar(95);
+	_putchar('0' + 47);
 	_putchar("p");
 	_putchar("u");
 	_putchar("t");
