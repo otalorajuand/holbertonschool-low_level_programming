@@ -8,13 +8,13 @@
 int main(void)
 {	
 	
-	_putchar('0' + 47);
-	_putchar("p");
-	_putchar("u");
-	_putchar("t");
-	_putchar("c");
-	_putchar("a");
-	_putchar("r");
-	_putchar("\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
