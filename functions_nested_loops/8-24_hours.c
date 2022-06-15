@@ -29,13 +29,13 @@ void jack_bauer(void)
 					_putchar('0' + j);
 					_putchar('0' + k);
 					_putchar('\n');
-					if (i == 2 && j == 9)
-					{
-						break;
-					}
 					k++;
 				}
 				j++;
+			}
+			if (i == 2 && m == 9)
+			{
+				break;
 			}
 			m++;
 		}
