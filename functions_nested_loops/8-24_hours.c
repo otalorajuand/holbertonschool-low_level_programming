@@ -33,7 +33,7 @@ void jack_bauer(void)
 				}
 				j++;
 			}
-			if (i == 2 && m == 9)
+			if (i == 2 && m == 3)
 			{
 				break;
 			}
