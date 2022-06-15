@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Prints the letters of the alphabet in lower case.
+ * print_alphabet - Prints the letters of the alphabet in lower case.
  *
  * Return: Always returns 0.
  */
@@ -17,5 +17,4 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
-	return;
 }
