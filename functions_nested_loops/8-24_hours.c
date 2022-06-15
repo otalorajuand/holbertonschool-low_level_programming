@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * jack_bauer - Prints all the minutes of a day.
@@ -8,20 +7,25 @@
 
 void jack_bauer(void)
 {
-	int i = 0;
+	int i;
+	int m;
+	int j;
+	int m;
+
+	i = 0;
 
 	while (i <= 2)
 	{
-		int m = 0;
+		m = 0;
 
 		while (m <= 9)
 		{
 
-			int j = 0;
+			j = 0;
 
 			while (j <= 5)
 			{
-				int k = 0;
+				k = 0;
 
 				while (k <= 9)
 				{
