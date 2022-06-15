@@ -2,7 +2,7 @@
 
 /**
  * main - Prints "_putchar"
- *
+ * @int: The number to be checked
 * Return: Always returns 0.
  */
 
