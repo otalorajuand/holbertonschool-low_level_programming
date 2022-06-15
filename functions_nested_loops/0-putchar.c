@@ -6,10 +6,9 @@
 * Return: Always returns 0.
  */
 
-int _putchar(int);
+int _putchar(int char);
 int main(void)
-{	
-	
+{
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
