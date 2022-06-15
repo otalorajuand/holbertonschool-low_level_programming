@@ -7,7 +7,7 @@
  * Return: Returns the absolute value of int.
  */
 
-int _abs(int i);
+int _abs(int i)
 {
 	return (abs(i));
 }
