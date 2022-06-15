@@ -24,7 +24,7 @@ void jack_bauer(void)
 				while (k <= 9)
 				{
 					_putchar('0' + i);
-					_putchar('0' + j);
+					_putchar('0' + m);
 					_putchar(':');
 					_putchar('0' + j);
 					_putchar('0' + k);
