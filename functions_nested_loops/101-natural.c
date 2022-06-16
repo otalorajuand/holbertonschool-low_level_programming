@@ -6,7 +6,7 @@
  * Return: Void.
  */
 
-void multiples35(void)
+int multiples35(void)
 {
 	int i = 0;
 	int n = 0;
