@@ -17,7 +17,7 @@ void print_times_table(int n)
 			int j = 0;
 
 			while (j <= n)
-			{	
+			{
 				if (j == 0)
 				{
 					_putchar('0' + (i * j) % 10);
@@ -46,5 +46,5 @@ void print_times_table(int n)
 			}
 			i++;
 		}
-	}	
+	}
 }
