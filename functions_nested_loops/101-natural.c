@@ -1,12 +1,6 @@
 #include <stdio.h>
 
-/**
- * multiples35 - Prints the nth multiplication table of integers.
- *
- * Return: Void.
- */
-
-void multiples35(void)
+void main(void)
 {
 	int i = 0;
 	int n = 0;
