@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	int i = 0;
 	unsigned long counter = 0;
 	unsigned long n1 = 0;
 	unsigned long n2 = 1;
