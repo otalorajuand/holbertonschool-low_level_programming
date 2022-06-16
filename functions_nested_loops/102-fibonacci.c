@@ -9,9 +9,9 @@
 int main(void)
 {
 	int i = 0;
-	int n1 = 0;
-	int n2 = 1;
-	int n2aux;
+	long n1 = 0;
+	long n2 = 1;
+	long n2aux;
 
 	while (i <= 50)
 	{
