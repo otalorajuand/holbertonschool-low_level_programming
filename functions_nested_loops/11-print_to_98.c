@@ -13,23 +13,31 @@ void print_to_98(int n)
 	{
 		if (n < 0)
 		{
-			if (abs(n) / 10 == 0)
+			if (n < 9)
 			{
 				_putchar('-');
 				_putchar('0' + abs(n) % 10);
 			} else
 			{
 				_putchar('-');
+				if (abs(n) / 100 != 0)
+				{
+					_putchar('0' + abs(n) / 100);
+				}
 				_putchar('0' + abs(n) / 10);
 				_putchar('0' + abs(n) % 10);
 			}
 		} else
 		{
-			if (n / 10 == 0)
+			if (n < 9)
 			{
 				_putchar('0' + n % 10);
 			} else
 			{
+				if (abs(n) / 100 != 0)
+				{
+					_putchar('0' + n / 100);
+				}
 				_putchar('0' + n / 10);
 				_putchar('0' + n % 10);
 			}
@@ -43,5 +51,5 @@ void print_to_98(int n)
 			_putchar('\n');
 		}
 		n++;
-	}
+	}	
 }
