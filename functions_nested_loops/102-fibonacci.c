@@ -13,9 +13,13 @@ int main(void)
 	long n2 = 1;
 	long n2aux;
 
-	while (i <= 50)
+	while (i < 50)
 	{
-		printf("%ld, ", n2 + n1);
+		printf("%ld", n2 + n1);
+		if (i < 49)
+		{
+			printf(", ");
+		}
 		n2aux = n2;
 		n2 = n2 + n1;
 		n1 = n2aux;
