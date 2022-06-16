@@ -14,7 +14,7 @@ int main(void)
 	unsigned long n2 = 1;
 	int flag = 0;
 	unsigned long n2aux;
-	int end_number = 4000000;
+	unsigned long end_number = 4000000;
 
 	while (flag == 0)
 	{
