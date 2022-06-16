@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * multiples35 - Prints the nth multiplication table of integers.
@@ -6,7 +7,7 @@
  * Return: Void.
  */
 
-int multiples35(void)
+void multiples35(void)
 {
 	int i = 0;
 	int n = 0;
@@ -18,5 +19,5 @@ int multiples35(void)
 			n = n + i;
 		}
 	}
-	return (n);
+	printf("%d\n",n);
 }
