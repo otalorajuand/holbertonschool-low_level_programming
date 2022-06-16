@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
 	int i = 0;
 	int n = 0;
@@ -13,4 +13,5 @@ void main(void)
 		}
 	}
 	printf("%d\n",n);
+	return (0);
 }
