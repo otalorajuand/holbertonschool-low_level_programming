@@ -13,9 +13,16 @@ void print_to_98(int n)
 	{
 		if (n < 0)
 		{
-			_putchar('-');
-			_putchar('0' + abs(n) / 10);
-			_putchar('0' + abs(n) % 10);
+			if (abs(n) / 10 == 0)
+			{
+				_putchar('-');
+				_putchar('0' + abs(n) % 10);
+			} else
+			{
+				_putchar('-');
+				_putchar('0' + abs(n) / 10);
+				_putchar('0' + abs(n) % 10);
+			}
 		} else
 		{
 			if (n / 10 == 0)
