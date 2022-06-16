@@ -16,8 +16,8 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			n = n + i;
-			i++;
 		}
+		i++;
 	}
 	printf("%d\n", n);
 	return (0);
