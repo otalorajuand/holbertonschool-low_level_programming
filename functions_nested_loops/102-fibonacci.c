@@ -15,7 +15,7 @@ int main(void)
 
 	while (i <= 50)
 	{
-		printf("%d, ", n2 + n1);
+		printf("%ld, ", n2 + n1);
 		n2aux = n2;
 		n2 = n2 + n1;
 		n1 = n2aux;
