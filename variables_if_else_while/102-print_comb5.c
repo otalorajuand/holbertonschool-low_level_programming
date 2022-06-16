@@ -12,34 +12,28 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
-	int m;
 
 	i = 0;
-	while (i <= 9)
+	while (i <= 98)
 	{
 		j = 0;
-		while (j <= 8)
+		while (j <= 99)
 		{
-			k = i;
-			while (k <= 9)
+			if (i / 10 != 0)
 			{
-				m = j + 1;
-				while (m <= 9)
-				{
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar(' ');
-					putchar('0' + k);
-					putchar('0' + m);
-					if ((i + j) < 17)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					m++;
-				}
-				k++;
+				putchar('0' + i / 10);
+			}
+			putchar('0' + i % 10);
+			putchar(' ');
+			if (j / 10 != 0)
+			{
+				putchar('0' + j / 10);
+			}
+			putchar('0' + j % 10);
+			if (i < 98)
+			{
+				putchar(',');
+				putchar(' ');
 			}
 			j++;
 		}
