@@ -12,10 +12,11 @@ int main(void)
 	unsigned long counter = 0;
 	unsigned long n1 = 0;
 	unsigned long n2 = 1;
-	long final_fibo = 4000000;
+	int flag = 0;
 	unsigned long n2aux;
+	int end_number = 4000000;
 
-	while (i < final_fibo)
+	while (flag == 0)
 	{
 		if ((n2 + n1) % 2 == 0)
 		{
@@ -24,7 +25,10 @@ int main(void)
 		n2aux = n2;
 		n2 = n2 + n1;
 		n1 = n2aux;
-		i++;
+		if (n2 > end_number)
+		{
+			flag = 1;
+		}
 	}
 	printf("%ld\n", counter);
 	return (0);
