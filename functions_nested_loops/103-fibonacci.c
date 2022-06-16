@@ -9,11 +9,11 @@
 int main(void)
 {
 	int i = 0;
-	long  counter = 0;
-	long n1 = 0;
-	 long n2 = 1;
+	unsigned long counter = 0;
+	unsigned long n1 = 0;
+	unsigned long n2 = 1;
 	long final_fibo = 4000000;
-	long n2aux;
+	unsigned long n2aux;
 
 	while (i < final_fibo)
 	{
