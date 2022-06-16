@@ -16,7 +16,7 @@ int main(void)
 	i = 0;
 	while (i <= 98)
 	{
-		j = 0;
+		j = i + 1;
 		while (j <= 99)
 		{
 			putchar('0' + i / 10);
