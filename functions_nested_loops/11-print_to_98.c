@@ -18,8 +18,14 @@ void print_to_98(int n)
 			_putchar('0' + abs(n) % 10);
 		} else
 		{
-			_putchar('0' + n / 10);
-			_putchar('0' + n % 10);
+			if (n / 10 == 0)
+			{
+				_putchar('0' + n % 10);
+			} else
+			{
+				_putchar('0' + n / 10);
+				_putchar('0' + n % 10);
+			}
 		}
 		if (n < 98)
 		{
