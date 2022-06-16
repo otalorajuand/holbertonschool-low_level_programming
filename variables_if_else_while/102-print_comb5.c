@@ -19,16 +19,10 @@ int main(void)
 		j = 0;
 		while (j <= 99)
 		{
-			if (i / 10 != 0)
-			{
-				putchar('0' + i / 10);
-			}
+			putchar('0' + i / 10);
 			putchar('0' + i % 10);
 			putchar(' ');
-			if (j / 10 != 0)
-			{
-				putchar('0' + j / 10);
-			}
+			putchar('0' + j / 10);
 			putchar('0' + j % 10);
 			if (i < 98)
 			{
