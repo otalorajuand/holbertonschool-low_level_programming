@@ -9,10 +9,10 @@
 int main(void)
 {
 	int i = 0;
-	long long  counter = 0;
-	long long  n1 = 0;
-	long long n2 = 1;
-	long long final_fibo = 4000000;
+	long long  counter = 0LL;
+	long long  n1 = 0LL;
+	long long n2 = 1LL;
+	long long final_fibo = 4000000LL;
 	long long n2aux;
 
 	while (i < final_fibo)
@@ -26,6 +26,6 @@ int main(void)
 		n1 = n2aux;
 		i++;
 	}
-	printf("%ld\n", counter);
+	printf("%lld\n", counter);
 	return (0);
 }
