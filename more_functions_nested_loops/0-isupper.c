@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * _isupper - Checks wheteher a char is upper.
@@ -7,7 +8,7 @@
  */
 
 
-int _isupper(int c);
+int _isupper(int c)
 {
 	if (isupper(c))
 	{
