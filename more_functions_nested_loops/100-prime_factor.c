@@ -11,9 +11,9 @@ int check_if_prime(int a);
 
 int main(void)
 {
-	unsigned long int i = 3;
-	unsigned long int number = 612852475143;
-	unsigned long int result;
+	unsigned long i = 3;
+	unsigned long number = 612852475143;
+	unsigned long result;
 	
 	while (i <= number / 2)
 	{
