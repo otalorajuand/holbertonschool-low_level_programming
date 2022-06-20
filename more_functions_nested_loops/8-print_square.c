@@ -3,7 +3,7 @@
 
 /**
  * print_square - Prints a square made of #
- * @n: Side of square
+ * @size: Side of square
 * Return: Void.
  */
 
