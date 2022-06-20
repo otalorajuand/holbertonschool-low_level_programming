@@ -11,9 +11,8 @@ int check_if_prime(int a);
 
 int main(void)
 {
-	unsigned long int i = 2;
+	unsigned long int i = 1;
 	unsigned long int number = 612852475143;
-	unsigned long int j;
 	unsigned long int result;
 	
 	while (i <= number / 2)
@@ -26,7 +25,7 @@ int main(void)
 			}
 
 		}
-		i++;
+		i = i + 2;
 	}
 	printf("%ld\n", result);
 	return (0);
