@@ -11,7 +11,7 @@ int check_if_prime(int a);
 
 int main(void)
 {
-	unsigned long int i = 1;
+	unsigned long int i = 3;
 	unsigned long int number = 612852475143;
 	unsigned long int result;
 	
