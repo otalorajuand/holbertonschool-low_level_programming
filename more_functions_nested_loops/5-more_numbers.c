@@ -14,7 +14,7 @@ void more_numbers(void)
 	int j = 0;
 	int repetition = 10;
 
-	while (j <= repetition)
+	while (j < repetition)
 	{
 		i = 0;
 		while (i <= end)
