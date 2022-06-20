@@ -19,7 +19,11 @@ void more_numbers(void)
 		i = 0;
 		while (i <= end)
 		{
-			_putchar('0' + i);
+			if (i / 10 != 0)
+			{
+				_putchar('0' + i / 10);
+			}
+			_putchar('0' + i % 10);
 			i++;
 		}
 		j++;
