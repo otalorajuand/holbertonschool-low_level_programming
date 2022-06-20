@@ -33,16 +33,16 @@ int main(void)
 
 int check_if_prime(int a)
 {
-	int i = 2;
+	int i = 3;
 
 	if (a == 2)
 		return (1);
 
-	while (i < a)
+	while (i <= a / 2)
 	{
 		if (a % i == 0)
 			return (0);
-		i++;
+		i = i + 2;
 	}
 	return (1);
 
