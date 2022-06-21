@@ -11,10 +11,10 @@
 void rev_string(char *s)
 {
 	int len = strlen(s);
-	char saux[len];
+	char saux[];
+	int i = 0;
 
 	strcpy(saux, s);
-	int i = 0;
 
 	while (len--)
 	{
