@@ -10,5 +10,10 @@
 
 void print_rev(char *s)
 {
-	strrev(s);
+	int length = strlen(s);
+
+	while (length--)
+	{
+		putchar(s[length]);
+	}
 }
