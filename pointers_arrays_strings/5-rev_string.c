@@ -3,23 +3,22 @@
 #include <string.h>
 
 /**
- * rev_string - reverses a string.
- * @s: The pointer of the string.
+ * puts2 - prints every other character of a string, starting with the first
+ * character, followed by a new line.
+ * @str: The pointer of the string.
 * Return: Nothing.
  */
 
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int len = strlen(s);
-	char saux[10] = "Holberton";
+	int length = strlen(str);
 	int i = 0;
 
-	strcpy(saux, s);
-
-	while (len--)
+	while (i < length)
 	{
-		*(s + i) = saux[len];
-		i++;
+		putchar(str[i]);
+		i += 2;
 	}
+	putchar('\n');
 
 }
