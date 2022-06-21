@@ -10,13 +10,13 @@
 
 void rev_string(char *s)
 {
-	int length = strlen(s);
-	char saux[length];
+	int len = strlen(s);
+	char saux[len];
 	int i = 0;
 
-	while (length--)
+	while (len--)
 	{
-		saux[i] = s[length];
+		saux[i] = s[len];
 	}
 
 	s = saux;
