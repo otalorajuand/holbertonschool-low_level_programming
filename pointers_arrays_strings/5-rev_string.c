@@ -12,12 +12,14 @@ void rev_string(char *s)
 {
 	int len = strlen(s);
 	char saux[len];
+
+	strcpy(saux, s);
 	int i = 0;
 
 	while (len--)
 	{
-		saux[i] = s[len];
+		*(s + i) = saux[len];
+		i++;
 	}
 
-	s = saux;
 }
