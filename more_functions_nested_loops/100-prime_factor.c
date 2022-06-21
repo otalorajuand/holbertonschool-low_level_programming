@@ -15,7 +15,7 @@ int main(void)
 	unsigned long number = 612852475143;
 	unsigned long result;
 	
-	while (i <= number / 2)
+	while (i < number / 2)
 	{
 		if (number % i == 0)
 		{
@@ -38,7 +38,7 @@ int check_if_prime(int a)
 	if (a == 2)
 		return (1);
 
-	while (i <= a / 2)
+	while (i < a / 2)
 	{
 		if (a % i == 0)
 			return (0);
