@@ -11,7 +11,7 @@
 void rev_string(char *s)
 {
 	int len = strlen(s);
-	char saux[];
+	char saux[strlen(s)];
 	int i = 0;
 
 	strcpy(saux, s);
