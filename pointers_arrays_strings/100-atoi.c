@@ -26,10 +26,10 @@ int _atoi(char *s)
 		{
 			if (flag % 2)
 			{
-				res = (res * 10) + (s[i] + '0')
+				res = (res * 10) + (s[i] + '0');
 			} else
 			{
-				res = (res * 10) - (s[i] + '0')
+				res = (res * 10) - (s[i] + '0');
 
 			}
 		}
