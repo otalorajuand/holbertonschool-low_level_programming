@@ -12,20 +12,13 @@
 
 void reverse_array(int *a, int n)
 {
-	int len = n;
-	int aux[len];
-	int i = 0;
-	int j = 0;
-
-	while (j <= n)
+	while (n--)
 	{
-		aux[j] = a[j];
-		j++;
-	}
-
-	while (len--)
-	{
-		a[i] = aux[len];
+		printf("%i", a[n]);
+		if (n > 0)
+		{
+			printf(", ");
+		}
 		i++;
 	}
 }
