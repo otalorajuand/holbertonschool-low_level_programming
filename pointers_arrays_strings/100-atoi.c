@@ -15,7 +15,7 @@ int _atoi(char *s)
 	int len = strlen(s);
 	int flag = 0;
 
-	while (i < len)
+	while (i <= len)
 	{
 		if (s[i] == '-')
 		{
@@ -33,6 +33,11 @@ int _atoi(char *s)
 
 			}
 		}
+		if (s[i] > '9' || s[i] < '0')
+		{
+			break;
+		}
+
 		i++;
 	}
 	return (res);
