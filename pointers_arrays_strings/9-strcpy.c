@@ -11,6 +11,10 @@
 
 char *_strcpy(char *dest, char *src)
 {
+	char *pointer;
+
 	strcpy(dest, src);
-	return (dest);
+
+	pointer = dest;
+	return (pointer);
 }
