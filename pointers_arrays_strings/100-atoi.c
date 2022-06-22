@@ -32,12 +32,11 @@ int _atoi(char *s)
 				res = (res * 10) + (s[i] - '0');
 
 			}
+			if (s[i + 1] > '9' || s[i + 1] < '0')
+			{
+				break;
+			}
 		}
-		if (s[i + 1] > '9' || s[i + 1] < '0')
-		{
-			break;
-		}
-
 		i++;
 	}
 	return (res);
