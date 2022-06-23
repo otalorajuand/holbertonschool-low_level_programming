@@ -17,11 +17,11 @@ unsigned int _strspn(char *s, char *accept)
 	int j;
 	int len = strlen(accept);
 
-	while (k <= n)
+	while (k <= len)
 	{
 		j = 0;
 
-		while (j <= n)
+		while (j <= len)
 		{
 			if (accept[k] == s[j])
 			{
