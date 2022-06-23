@@ -14,6 +14,7 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 	int len = strlen(s);
+	char *str;
 
 	if (c != '\0')
 	{
@@ -27,8 +28,6 @@ char *_strchr(char *s, char c)
 		}
 		return (NULL);
 	}
-
-	char *str;
 
 	str = "\0";
 	return (str);
