@@ -28,7 +28,9 @@ char *_strchr(char *s, char c)
 		return (NULL);
 	} else 
 	{
+		char *str;
 
-		return ('\n');
+		str = '\n'
+		return (str);
 	}
 }
