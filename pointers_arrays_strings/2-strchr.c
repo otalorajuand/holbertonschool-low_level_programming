@@ -26,11 +26,10 @@ char *_strchr(char *s, char c)
 			i++;
 		}
 		return (NULL);
-	} else 
-	{
-		char *str;
-
-		str = "\n";
-		return (str);
 	}
+
+	char *str;
+
+	str = "\0";
+	return (str);
 }
