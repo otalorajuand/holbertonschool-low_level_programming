@@ -35,7 +35,7 @@ char *_strpbrk(char *s, char *accept)
 				}
 				j++;
 			}
-			k++;
+			i++;
 		}
 
 	}
