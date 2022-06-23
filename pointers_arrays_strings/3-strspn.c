@@ -17,23 +17,26 @@ unsigned int _strspn(char *s, char *accept)
 	int j;
 	int len = strlen(accept);
 
-	while (k <= len)
+	if (s[0] != '\0' && accept[0] != '\0')
 	{
-		j = 0;
-
-		while (j <= len)
+		while (k <= len)
 		{
-			if (s[j] == '.' || s[j] == ',' || s[j] == ' ')
+			j = 0;
+
+			while (j <= len)
 			{
-				break;
+				if (s[j] == '.' || s[j] == ',' || s[j] == ' ')
+				{
+					break;
+				}
+				if (accept[k] == s[j])
+				{
+					i++;
+				}
+				j++;
 			}
-			if (accept[k] == s[j])
-			{
-				i++;
-			}
-			j++;
+			k++;
 		}
-		k++;
 	}
 	return (i);
 }
