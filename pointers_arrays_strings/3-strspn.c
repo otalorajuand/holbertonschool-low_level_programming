@@ -16,7 +16,6 @@ unsigned int _strspn(char *s, char *accept)
 	int k = 0;
 	int j;
 	int len = strlen(accept);
-	int flag = 0;
 
 	while (k <= len)
 	{
@@ -26,7 +25,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[j] == '.' || s[j] == ',' || s[j] == ' ')
 			{
-				flag = 1;
 				break;
 			}
 			if (accept[k] == s[j])
@@ -34,10 +32,6 @@ unsigned int _strspn(char *s, char *accept)
 				i++;
 			}
 			j++;
-			if (flag)
-			{
-				break;
-			}
 		}
 		k++;
 	}
