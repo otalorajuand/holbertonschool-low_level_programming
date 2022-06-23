@@ -26,12 +26,9 @@ char *_strpbrk(char *s, char *accept)
 
 			while (j <= len_s)
 			{
-				if (accept[i] == s[j])
+				if (accept[i] == s[j] && j <= min)
 				{
-					if (min <= j)
-					{
-						min = j;
-					}
+					min = j;
 				}
 				j++;
 			}
