@@ -15,13 +15,20 @@ char *_strchr(char *s, char c)
 	int i = 0;
 	int len = strlen(s);
 
-	while (i < len)
+	if (c != '\0')
 	{
-		if (s[i] == c)
+		while (i < len)
 		{
-			return ((s + i));
+			if (s[i] == c)
+			{
+				return ((s + i));
+			}
+			i++;
 		}
-		i++;
+		return (NULL);
+	} else 
+	{
+
+		return ('\n');
 	}
-	return (NULL);
 }
