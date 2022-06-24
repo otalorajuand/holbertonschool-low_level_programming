@@ -21,6 +21,6 @@ void print_chessboard(char (*a)[8])
 			j++;
 		}
 		i++;
-		printf('\n');
+		printf("\n");
 	}
 }
