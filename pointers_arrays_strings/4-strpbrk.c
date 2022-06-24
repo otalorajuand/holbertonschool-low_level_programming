@@ -14,9 +14,9 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i = 0;
 	int j;
-	int min = 0;
 	int len_a = strlen(accept);
 	int len_s = strlen(s);
+	int min = len_s;
 
 	if (s[0] != '\0' && accept[0] != '\0')
 	{
@@ -36,7 +36,7 @@ char *_strpbrk(char *s, char *accept)
 		}
 
 	}
-	if (min != 0)
+	if (min != len_s)
 	{
 		return (s + min);
 	}
