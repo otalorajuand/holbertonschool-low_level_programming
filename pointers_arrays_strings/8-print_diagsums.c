@@ -13,20 +13,20 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	int j = 0;
+	int j = 1;
 	int diag1 = 0;
 	int diag2 = 0;
 
 	while (i < size)
 	{
-		diag1 += a[i][i];
+		diag1 += *(a + (size + 1) * i);
 		i++;
 	}
 	printf("%d, ", diag1);
 
-	while (j < size)
+	while (j <= size)
 	{
-		diag2 += a[j][j];
+		diag2 += *(a + (size - 1) * j);
 		j++;
 	}
 	printf("%d", diag2);
