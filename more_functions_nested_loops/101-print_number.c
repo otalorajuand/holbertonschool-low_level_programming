@@ -12,6 +12,7 @@ void print_number(int n)
 {
 	int aux = n;
 	int dec = 10;
+	int i;
 
 	if (n < 0)
 	{
@@ -19,6 +20,7 @@ void print_number(int n)
 	}
 	while (1)
 	{
+		i = 0;
 		aux = abs(n);
 		while (aux > dec)
 		{
