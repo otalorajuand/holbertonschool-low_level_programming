@@ -25,6 +25,7 @@ void print_number(int n)
 		while (aux > dec)
 		{
 			aux /= 10;
+			i++;
 		}
 		dec *= 10;
 		_putchar('0' + aux % 10);
