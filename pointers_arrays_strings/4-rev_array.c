@@ -14,39 +14,15 @@
 void reverse_array(int *a, int n)
 {
 	int i;
+	int aux;
 
-	if (n < 0)
+	i = 0;
+	while (i < n)
 	{
-		i = 0;
-		while (i < sizeof(a) / sizeof(int))
-		{
-			if (i != 0)
-			{
-				printf(", ");
-			}
-			printf("%d", a[i]);
-			i++;
-		}
-		printf("\n");
-	} else
-	{
-		i = n;
-		while (i--)
-		{
-			if (i != n - 1)
-			{
-				printf(", ");
-			}
-			printf("%d", a[i]);
-		}
-
-		i = n;
-		while (i < sizeof(a) / sizeof(int))
-		{
-			printf(", ");
-			printf("%d", a[i]);
-			i++;
-		}
-		printf("\n");
+		aux = a[n - 1];
+		a[i] = a[n - 1];
+		a[n - 1] = aux;
+		i++;
+		n--;
 	}
 }
