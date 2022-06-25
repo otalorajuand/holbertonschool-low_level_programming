@@ -12,28 +12,24 @@
 char *leet(char *s)
 {
 	int i;
+	int j;
 	int len = strlen(s);
+
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
+	int len_s1 = strlen(s1);
 
 	i = 0;
 	while (i < len)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		j = 0;
+		while (j < len_s1)
 		{
-			s[i] = '4';
-
-		} else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-
-		} else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		} else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		} else if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
+			if (s[i] == s1[j])
+			{
+				s[i] = s2[j];
+				j++;
+			}
 		}
 		i++;
 	}
