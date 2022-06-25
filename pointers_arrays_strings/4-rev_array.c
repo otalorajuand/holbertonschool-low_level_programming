@@ -18,7 +18,7 @@ void reverse_array(int *a, int n)
 	if (n < 0)
 	{
 		i = 0;
-		while (i < -n)
+		while (i < sizeof(a) / sizeof(int))
 		{
 			if (i != 0)
 			{
@@ -30,7 +30,7 @@ void reverse_array(int *a, int n)
 		printf("\n");
 	} else
 	{
-		i = n - 1;
+		i = n;
 		while (i--)
 		{
 			if (i != n - 1)
@@ -38,6 +38,14 @@ void reverse_array(int *a, int n)
 				printf(", ");
 			}
 			printf("%d", a[i]);
+		}
+
+		i = n;
+		while (i < sizeof(a) / sizeof(int))
+		{
+			printf(", ");
+			printf("%d", a[i]);
+			i++;
 		}
 		printf("\n");
 	}
