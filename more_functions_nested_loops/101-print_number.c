@@ -21,8 +21,8 @@ void print_number(int n)
 	while (1)
 	{
 		i = 0;
-		aux = abs(n);
-		while (aux > dec)
+		aux = labs(n);
+		while (aux >= dec)
 		{
 			aux /= 10;
 			i++;
