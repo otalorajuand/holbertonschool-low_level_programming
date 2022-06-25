@@ -28,8 +28,8 @@ char *leet(char *s)
 			if (s[i] == s1[j])
 			{
 				s[i] = s2[j];
-				j++;
 			}
+			j++;
 		}
 		i++;
 	}
