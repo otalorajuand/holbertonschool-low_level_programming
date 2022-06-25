@@ -11,11 +11,8 @@
 
 char *leet(char *s)
 {
-	int i = 0;
+	int i;
 	int len = strlen(s);
+:q
 
-	while (i <= n)
-	{
-		
-	}
 }
