@@ -31,5 +31,6 @@ void print_diagsums(int *a, int size);
 char *rot13(char *);
 void print_number(int n);
 void set_string(char **s, char *to);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
 #endif /* MAIN_H */
