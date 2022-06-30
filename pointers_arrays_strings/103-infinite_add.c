@@ -15,17 +15,17 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	char suma;
 	char reminder = '\0'; 
-	int len_s1 = strlen(s1);
-	int len_s2 = strlen(s2);
+	int len_n1 = strlen(n1);
+	int len_n2 = strlen(n2);
   
-	for (int i = len_s1 - 1; i >= 0; i--)
+	for (int i = len_n1 - 1; i >= 0; i--)
 	{
 		if (reminder == '\0')
 		{
-			suma = s1[i] + s2[i] - 48;
+			suma = n1[i] + n2[i] - 48;
 		} else
 		{
-			suma = s1[i] + s2[i] + reminder - 96;
+			suma = n1[i] + n2[i] + reminder - 96;
 			reminder = '\0';
 		}
 
