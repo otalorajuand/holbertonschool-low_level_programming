@@ -7,19 +7,18 @@
  * @n1: First integer
  * @n2: Second integer
  * @r: buffer to store the output
- * @size_: size of the buffer
-* Return - The pointer to the result. 
+ * @size_r: size of the buffer
+* Return: The pointer to the result.
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 
 	char suma;
-	char reminder = '\0'; 
-	int len_n1 = strlen(n1);
-	int len_n2 = strlen(n2);
-  
-	for (int i = len_n1 - 1; i >= 0; i--)
+	int i;
+	char reminder = '\0';
+
+	for (i = size_r - 1; i >= 0; i--)
 	{
 		if (reminder == '\0')
 		{
