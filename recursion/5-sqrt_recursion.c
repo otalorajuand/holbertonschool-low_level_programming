@@ -7,10 +7,31 @@
 * Return: Returns the natural square root of a number.
  */
 
+
+int aux_func(int n, int m);
+
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
+	return (aux_func(n, n));
+}
 
-	return (1 + _sqrt_recursion(n - ));
+/**
+ * aux_func - Auxiliary function for keeping a variable constant.
+ * @n: The inout number.
+ * @m: Original input number.
+* Return: Returns the natural square root of a number.
+ */
+
+int aux_func(int n, int m)
+{
+	if (n == 1)
+	{
+		return (-1);
+	}
+
+	if (n * n == m)
+	{
+		return (n);
+	}
+	aux_func(n - 1, m);
 }
