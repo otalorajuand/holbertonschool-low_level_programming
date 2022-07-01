@@ -21,12 +21,14 @@ int _sqrt_recursion(int n)
 
 int aux_func_sqrt(int n, int m)
 {
+	unsigned long multiplicacion = n * n
+
 	if (n < 0)
 	{
 		return (-1);
 	}
 
-	if (n * n == m)
+	if (multiplicacion == m)
 	{
 		return (n);
 	}
