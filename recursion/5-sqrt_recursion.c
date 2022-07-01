@@ -24,7 +24,7 @@ int _sqrt_recursion(int n)
 
 int aux_func(int n, int m)
 {
-	if (n == 1)
+	if (n < 0)
 	{
 		return (-1);
 	}
