@@ -7,12 +7,9 @@
 * Return: Returns the natural square root of a number.
  */
 
-
-int aux_func(int n, int m);
-
 int _sqrt_recursion(int n)
 {
-	return (aux_func(n, n));
+	return (aux_func_sqrt(n, n));
 }
 
 /**

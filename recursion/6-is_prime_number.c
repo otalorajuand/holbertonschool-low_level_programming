@@ -9,7 +9,7 @@
 
 int is_prime_number(int n)
 {
-	return (aux_func(n - 1, n));
+	return (aux_func_prime(n - 1, n));
 }
 
 /**
