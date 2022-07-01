@@ -16,13 +16,13 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * aux_func - Auxiliary function for keeping a variable constant.
- * @n: The inout number.
+ * aux_func_sqrt - Auxiliary function for keeping a variable constant.
+ * @n: The input number.
  * @m: Original input number.
 * Return: Returns the natural square root of a number.
  */
 
-int aux_func(int n, int m)
+int aux_func_sqrt(int n, int m)
 {
 	if (n < 0)
 	{
@@ -33,5 +33,5 @@ int aux_func(int n, int m)
 	{
 		return (n);
 	}
-	return (aux_func(n - 1, m));
+	return (aux_func_sqrt(n - 1, m));
 }

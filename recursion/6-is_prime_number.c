@@ -7,22 +7,19 @@
 * Return: Returns 1 if the number is prime, and 0 otherwise.
  */
 
-
-int aux_func(int n, int m);
-
 int is_prime_number(int n)
 {
 	return (aux_func(n - 1, n));
 }
 
 /**
- * aux_func - Auxiliary function for keeping a variable constant.
- * @n: The inout number.
- * @m: Original input number.
+ * aux_func_prime - Auxiliary function for keeping a variable constant.
+ * @m: The inout number.
+ * @n: Original input number.
 * Return: Returns the natural square root of a number.
  */
 
-int aux_func(int n, int m)
+int aux_func_prime(int n, int m)
 {
 	if (n <= 0)
 	{
@@ -38,5 +35,5 @@ int aux_func(int n, int m)
 	{
 		return (0);
 	}
-	return (aux_func(n - 1, m));
+	return (aux_func_prime(n - 1, m));
 }
