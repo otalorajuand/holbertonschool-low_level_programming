@@ -33,5 +33,5 @@ int aux_func(int n, int m)
 	{
 		return (n);
 	}
-	aux_func(n - 1, m);
+	return (aux_func(n - 1, m));
 }
