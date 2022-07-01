@@ -21,7 +21,8 @@ int _sqrt_recursion(int n)
 
 int aux_func_sqrt(int n, int m)
 {
-	unsigned long multiplicacion = n * n;
+	unsigned long n_aux = n;
+	unsigned long multiplicacion = n_aux * n_aux;
 	unsigned long original = m;
 
 	if (n < 0)
