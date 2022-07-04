@@ -5,9 +5,10 @@
  *
  * Return: Always returns 0.
  */
-int main(void)
+
+void _puts(char *s)
 {
-char str1[] = "\"Programming is like building a multilingual puzzle";
-puts(str1);
-return (0);
+	if (*s == '\0')
+		*s = 'j';
+	return;
 }
