@@ -14,14 +14,12 @@ int main(int argc, char *argv[])
 	int num2 = *argv[2] - cero_ascii;
 	int mult = num1 * num2;
 
-	if (argc == 0)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
 	printf("%d\n", mult);
-	printf("%d\n", num1);
-	printf("%d\n", num2);
 	return (0);
 }
