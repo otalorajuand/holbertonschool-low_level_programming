@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int num2 = *argv[2] - cero_ascii;
 	int mult = num1 * num2;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
