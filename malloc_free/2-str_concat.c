@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _str_concat - Concatenates two strings in another part of memory.
+ * str_concat - Concatenates two strings in another part of memory.
  * @s1: The first input string.
  * @s2: The second input string.
 * Return: The string modified.
