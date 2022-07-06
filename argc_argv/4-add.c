@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum, j;
+	int i, sum, j, len;
 
 	sum = 0;
 
@@ -20,7 +20,8 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (j = 0; j < strlen(argv[i]); j++)
+			len = strlen(argv[i]);
+			for (j = 0; j < len; j++)
 			{
 				if (isdigit(argv[i][j]) == 0)
 				{
