@@ -26,7 +26,10 @@ char *create_array(unsigned int size, char c)
 		str[i] = c;
 	}
 	str[0] = c;
-
+	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	return (str);
-	free(str);
 }
