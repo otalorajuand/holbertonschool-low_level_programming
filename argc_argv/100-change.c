@@ -13,7 +13,6 @@
 
 int main(int argc, char *argv[])
 {
-
 	int count = 0;
 	int n;
 
@@ -22,38 +21,31 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	n = atoi(argv[1]);
-
 	if (n < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
 	while (n != 0)
 	{
 		if (n - 25 >= 0)
 		{
 			n -= 25;
-			count++;
 		} else if (n - 10 >= 0)
 		{
 			n -= 10;
-			count++;
 		} else if (n - 5 >= 0)
 		{
 			n -= 5;
-			count++;
 		} else if (n - 2 >= 0)
 		{
 			n -= 2;
-			count++;
 		} else if (n - 1 >= 0)
 		{
 			n -= 1;
-			count++;
 		}
+		count++;
 	}
 	printf("%d\n", count);
 	return (0);
