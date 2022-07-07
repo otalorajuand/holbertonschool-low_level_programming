@@ -13,15 +13,14 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *str_3;
-	char *str_null;
+	char *str_null = "\n";
 	int i;
 	int len_1;
 	int len_2;
 
 	if (s2 == NULL && s2 == NULL)
 	{
-		str_null = "\n";
-		return (NULL);
+		return (str_null);
 	} else if (s2 == NULL)
 	{
 		return (s1);
