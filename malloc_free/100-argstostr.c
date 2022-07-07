@@ -36,6 +36,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
+		len_aux = strlen(av[i]);
 		for (j = 0; j < len_aux; j++)
 		{
 			ptr[k] = av[i][j];
