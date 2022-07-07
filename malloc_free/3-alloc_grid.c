@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 	{
 		ptr[i] = calloc(width, sizeof(int));
 
-		if (ptr[i] == NULL)
+		if (!ptr[i])
 		{
 			while (i >= 0)
 			{
