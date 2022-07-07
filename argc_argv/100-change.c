@@ -52,6 +52,7 @@ int main(int argc, char *argv[])
 		} else if (n - 1 >= 0)
 		{
 			n -= 1;
+			count++;
 		}
 	}
 	printf("%d\n", count);
