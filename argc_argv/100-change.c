@@ -50,5 +50,6 @@ int main(int argc, char *argv[])
 			count++;
 		}
 	}
-	return (count);
+	printf("%d", count);
+	return (0);
 }
