@@ -45,10 +45,13 @@ int main(int argc, char *argv[])
 		{
 			n -= 5;
 			count++;
+		} else if (n - 2 >= 0)
+		{
+			n -= 2;
+			count++;
 		} else if (n - 1 >= 0)
 		{
 			n -= 1;
-			count++;
 		}
 	}
 	printf("%d\n", count);
