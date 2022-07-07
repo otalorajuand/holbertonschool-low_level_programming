@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 {
 
 	int count = 0;
+	int n;
 
 	if (argc != 2)
 	{
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int n = atoi(argv[1]);
+	n = atoi(argv[1]);
 
 	if (n < 0)
 	{
