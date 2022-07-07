@@ -19,22 +19,22 @@ char *argstostr(int ac, char **av)
 
 	k = 0;
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		len += strlen(av[i]);
 	}
 
-	ptr = malloc(sizeof(char) * (len + ac - 1));
+	ptr = malloc(sizeof(char) * (len + ac));
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		len_aux = strlen(av[i]);
 	}
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; j < len_aux; j++)
 		{
