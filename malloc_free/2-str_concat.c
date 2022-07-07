@@ -13,7 +13,6 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *str_3;
-	char *str_null = "\n";
 	int i;
 	int len_1;
 	int len_2;
