@@ -26,13 +26,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 	{
 		s2 = "";
+	} else if (s1 == NULL)
+	{
+		s1 = "";
 	}
 
 	len_1 = strlen(s1);
 	len_2 = strlen(s2);
-
-	if (n >= len_2)
-		n = len_2;
 
 	str_3 = malloc(sizeof(char) * (len_1 + n) + 1);
 
