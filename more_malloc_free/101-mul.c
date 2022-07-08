@@ -12,16 +12,16 @@
 
 int main(int argc, char *argv[])
 {
-	int res;
+	long res;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (1);
+		exit(98);
 	}
 
 	res = atoi(argv[1]) * atoi(argv[2]);
 
-	printf("%d", res);
+	printf("%ld", res);
 	return (0);
 }
