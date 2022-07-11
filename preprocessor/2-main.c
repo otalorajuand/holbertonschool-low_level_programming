@@ -3,7 +3,7 @@
 
 /**
  * main - prints the name of the file with a macro define
-* Returns: 0 
+* Returns: always 0.
  */
 
 
