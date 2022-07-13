@@ -9,7 +9,7 @@
  * Return: 0 if the number is not in the array, otherwise 1.
  */
 
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 	int len = size;
