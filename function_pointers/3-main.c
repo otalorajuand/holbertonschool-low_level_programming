@@ -4,8 +4,9 @@
 
 /**
  * main - Does the operation
- * arc: arguments counter.
- * argv: arguments vector.
+ * @argc: arguments counter.
+ * @argv: arguments vector.
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -25,7 +26,7 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	c = *argv[2];
-	
+
 	if ((c == '/' || c == '%') && b == 0)
 	{
 		printf("Error\n");
