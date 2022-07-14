@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	char c;
 	int (*ptr)(int, int);
 
-	if (argc != 4 || argv[1] == NULL || argv[3] == NULL)
+	if (argc != 4 || argv[1] == NULL || argv[3] == NULL)
 	{
 		printf("Error\n");
 		exit(98);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 	ptr = get_op_func(argv[2]);
 
-	if (ptr == NULL || argv[2][1] != '\0')
+	if (ptr == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
