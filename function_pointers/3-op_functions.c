@@ -6,7 +6,7 @@
  * op_add - A function that adds two integers.
  * @a: the first intenger.
  * @b: the second integer.
- * return: the sum of the integers in an int.
+ * Return: the sum of the integers in an int.
  */
 
 int op_add(int a, int b)
@@ -19,7 +19,7 @@ int op_add(int a, int b)
  * op_sub - A function that substract two integers.
  * @a: the first intenger.
  * @b: the second integer.
- * return: the substraction of the integers in an int.
+ * Return: the substraction of the integers in an int.
  */
 
 
@@ -32,7 +32,7 @@ int op_sub(int a, int b)
  * op_mul - A function that multiplies two integers.
  * @a: the first intenger.
  * @b: the second integer.
- * return: the multiplication of the integers in an int.
+ * Return: the multiplication of the integers in an int.
  */
 
 
@@ -45,7 +45,7 @@ int op_mul(int a, int b)
  * op_div - A function that divides two integers.
  * @a: the first intenger.
  * @b: the second integer.
- * return: the divition of the integers in an int.
+ * Return: the divition of the integers in an int.
  */
 
 int op_div(int a, int b)
@@ -58,7 +58,7 @@ int op_div(int a, int b)
  * two integers.
  * @a: the first intenger.
  * @b: the second integer.
- * return: the residue of the division of the integers in an int.
+ * Return: the residue of the division of the integers in an int.
  */
 
 int op_mod(int a, int b)
