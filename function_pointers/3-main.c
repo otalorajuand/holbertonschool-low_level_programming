@@ -10,14 +10,17 @@
 
 int main(int argc, char *argv[])
 {
+	int a;
+	int b;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 	
 	if ((argv[2] == '/' || argv[2] == '%') && b == 0)
 	{
