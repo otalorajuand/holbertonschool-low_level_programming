@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	int b;
 	char c;
 	int (*ptr)(int, int);
+	int res;
 
 	if (argc != 4 || argv[1] == NULL || argv[3] == NULL)
 	{
@@ -39,5 +40,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	return (ptr(a, b));
+	res = (ptr(a, b));
+	printf("%d\n", res);
+	return (EXIT_SUCCESS);
 }
