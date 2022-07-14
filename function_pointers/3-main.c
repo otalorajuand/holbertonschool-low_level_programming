@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
 	char c;
 	int (*ptr)(int, int);
 
-	if (argc != 4)
+	if (argc != 4 || argv[1] == NULL || argv[3] == NULL)
 	{
-		printf("Error_1\n");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -27,18 +27,17 @@ int main(int argc, char *argv[])
 	
 	if ((c == '/' || c == '%') && b == 0)
 	{
-		printf("Error_2\n");
+		printf("Error\n");
 		exit(100);
 	}
 
 	ptr = get_op_func(argv[2]);
 
-	if (ptr == NULL)
+	if (ptr == NULL || argv[2][1] != '\0')
 	{
-		printf("Error_3\n");
+		printf("Error\n");
 		exit(99);
 	}
 
 	return (ptr(a, b));
-
 }
