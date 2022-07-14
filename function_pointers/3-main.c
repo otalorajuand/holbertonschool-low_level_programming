@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	ptr = get_op_func(c);
+	ptr = get_op_func(argv[2]);
 
 	if (ptr == NULL)
 	{
