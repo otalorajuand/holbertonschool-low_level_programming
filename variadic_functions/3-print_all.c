@@ -17,7 +17,6 @@ void print_all(const char * const format, ...)
 	char *str, *separator = "";
 
 	va_start(ap, format);
-	i = 0;
 	if (format != NULL)
 	{
 		while (i < len)
@@ -36,12 +35,12 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(ap, char *);
 				if (str == NULL)
-				{
 					printf("%s(nil)", separator);
-					break;
-				}
 				printf("%s%s", separator, str);
 				break;
+			default:
+				i++;
+				continue;
 			}
 			separator = ", ";
 			i++;
