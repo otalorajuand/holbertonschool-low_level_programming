@@ -18,8 +18,6 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 	i = 0;
-	if (format != NULL)
-	{
 	while (i < len)
 	{
 		switch (format[i])
@@ -49,7 +47,6 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		}
 		i++;
-	}
 	}
 	printf("\n");
 	va_end(ap);
