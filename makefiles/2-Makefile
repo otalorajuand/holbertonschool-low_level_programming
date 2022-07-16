@@ -1,0 +1,19 @@
+CC = gcc
+OBJ = main.o school.o
+NAME = school
+
+all: dependency_1
+	$(CC) $(OBJ) -o $(NAME)
+
+OBJ = school.o
+SRC = school.c
+
+dependecy_1: dependency_2
+	$(CC) -c -o $(OBJ) $(SRC)
+
+
+OBJ = main.o
+SRC = main.c
+
+dependency_2:
+	$(CC) -c -o $(OBJ) $(SRC)
