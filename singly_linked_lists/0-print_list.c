@@ -13,37 +13,20 @@
 size_t print_list(const list_t *h)
 {
 	int counter = 0;
-	list_t *current = NULL;
 
 	if (h == NULL)
 		return (0);
 
-	current = malloc(sizeof(list_t));
 
-	if (current == NULL)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	current->len = h->len;
-
-	if (h->str != NULL)
-		current->str = strdup(h->str);
-	else
-		current->str = NULL;
-
-	current->next = h->next;
-
-	while (current != NULL)
+	while (h != NULL)
 	{
 		counter++;
 
-		if (current->str == NULL)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", current->len, current->str);
-		current  = current->next;
+			printf("[%d] %s\n", h->len, h->str);
+		h  = h->next;
 	}
 	return (counter);
 }
