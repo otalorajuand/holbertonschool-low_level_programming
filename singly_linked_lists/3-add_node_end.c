@@ -26,13 +26,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	current = malloc(sizeof(list_t));
-	if (current == NULL)
-	{
-		free(current);
-		return (NULL);
-	}
-
 	current = *head;
 	new->str = strdup(str);
 	new->len = strlen(str);
