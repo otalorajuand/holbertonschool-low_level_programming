@@ -9,10 +9,25 @@
 
 void print_binary(unsigned long int n)
 {
-	while (n != 0)
+	int aux, counter = 0, n_bites;
+
+	aux = n_bites = n;
+
+	if (n == 0)
+		printf("0");
+
+	while (aux != 0)
 	{
-		_putchar((int)n & 1);
-		n >>= 1;
+		aux >>= 1;
+		counter++;
+	}
+
+	while (n_bites != 0)
+	{
+		aux = n >> (counter - 1);
+		printf("%d", aux & 1);
+		counter--;
+		n_bites >>= 1;
 	}
 }
 
