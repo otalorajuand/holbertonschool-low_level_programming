@@ -10,6 +10,12 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	int binary_number = 1 << index;
+	unsigned int max_size;
+
+	max_size = sizeof(n) * 8 - 1;
+
+	if (index >= max_size)
+		return (-1);
 
 	*n = ~((~*n) | binary_number);
 
