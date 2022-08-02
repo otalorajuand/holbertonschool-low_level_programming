@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 	while (n_bites != 0)
 	{
 		aux = n >> (counter - 1);
-		printf("%d", aux & 1);
+		putchar('0' + (aux & 1));
 		counter--;
 		n_bites >>= 1;
 	}
