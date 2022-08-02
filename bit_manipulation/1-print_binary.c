@@ -9,9 +9,9 @@
 
 void print_binary(unsigned long int n)
 {
-	int aux, counter = 0, n_bites;
+	unsigned long int aux, counter = 0;
 
-	aux = n_bites = n;
+	aux = n;
 
 	if (n == 0)
 		printf("0");
@@ -22,12 +22,11 @@ void print_binary(unsigned long int n)
 		counter++;
 	}
 
-	while (n_bites != 0)
+	while (counter != 0)
 	{
 		aux = n >> (counter - 1);
 		putchar('0' + (aux & 1));
 		counter--;
-		n_bites >>= 1;
 	}
 }
 
