@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
+	}
 
 	file1 = fopen(argv[1], "r");
 
