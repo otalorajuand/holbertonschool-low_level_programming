@@ -10,7 +10,15 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int displaced_number = n >> index;
+	unsigned int max_size;
+	int displaced_number;
+
+	max_size = sizeof(n) * 8 - 1;
+
+	if (index >= max_size)
+		return (-1);
+
+	displaced_number = n >> index;
 
 	return (displaced_number & 1);
 }
