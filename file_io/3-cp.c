@@ -9,40 +9,44 @@
 
 int main(int argc, char *argv[])
 {
-	char *buffer;
-	int file1, file2, buff_size, len_f1;
+	char buffer[3000];
+	int file1, file2, len_f1, close_fd, write_fd;
 
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
 	file1 = open(argv[1], O_RDONLY);
-
 	if (file1 == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
 	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
-	if (file2 == -1)
+	len_f1 = read(file1, buffer, sizeof(buffer));
+	write_fd = write(file2, buffer, len_f1);
+	if (file2 == -1 || write_fd == -1)
 	{
 		close(file1);
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
-	buff_size = 3000;
-	buffer = malloc(sizeof(char) * buff_size);
-	len_f1 = read(file1, buffer, buff_size);
+	close_fd = close(file1);
+	if (close_fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file1);
+		exit(100);
+	}
 
-	write(file2, buffer, len_f1);
-
-	close(file1);
-	close(file2);
-
+	close_fd = close(file2);
+	if (close_fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file2);
+		exit(100);
+	}
 	return (1);
 }
