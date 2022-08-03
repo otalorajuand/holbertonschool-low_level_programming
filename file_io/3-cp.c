@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	buff_size = 1024;
+	buff_size = 3000;
 	buffer = malloc(sizeof(char) * buff_size);
 	len_f1 = read(file1, buffer, buff_size);
 
