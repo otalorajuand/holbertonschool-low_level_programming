@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-  * get_nodeint_at_index - finds the indexth node  of a dlistint_t list
+  * get_dnodeint_at_index - finds the indexth node  of a dlistint_t list
   * @head: The head node of the list.
   * @index: the index..
  * Return: he address of the new element, or NULL if it failed.
