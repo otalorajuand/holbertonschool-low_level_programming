@@ -8,7 +8,8 @@
  * Return: he address of the new element, or NULL if it failed.
   */
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
+		unsigned int idx, int n)
 {
 	unsigned int i = 0;
 	int j = idx;
