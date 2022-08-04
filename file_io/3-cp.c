@@ -23,14 +23,13 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 00664);
 	while (len_f1 != 0)
 	{
-		len_f1 = read(file1, buffer, sizeof(buffer));
+		len_f1 = read(file1, buffer, 1024);
 		write_fd = write(file2, buffer, len_f1);
 		if (file2 == -1 || write_fd == -1)
 		{
-			close(file1);
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
