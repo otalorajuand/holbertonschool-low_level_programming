@@ -18,15 +18,16 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	file1 = open(argv[1], O_RDONLY);
-	if (file1 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 00664);
+	
+	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	while (len_f1 != 0)
 	{
 		len_f1 = read(file1, buffer, 1024);
+		if (file1 == -1 || len_f1 == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
 		write_fd = write(file2, buffer, len_f1);
 		if (file2 == -1 || write_fd == -1)
 		{
