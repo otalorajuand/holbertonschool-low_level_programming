@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	close_fd = close(file2);
 	if (close_fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd\n", file2);
 		exit(100);
 	}
 	return (1);
