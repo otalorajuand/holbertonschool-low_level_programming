@@ -43,14 +43,14 @@ int main(int argc, char *argv[])
 	close_fd = close(file1);
 	if (close_fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s", file1);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file1);
 		exit(100);
 	}
 
 	close_fd = close(file2);
 	if (close_fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s", file2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file2);
 		exit(100);
 	}
 	return (1);
