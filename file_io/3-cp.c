@@ -17,21 +17,17 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	file1 = open(argv[1], O_RDONLY);
 	if (file1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
 	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	while (len_f1 != 0)
 	{
 		len_f1 = read(file1, buffer, sizeof(buffer));
 		write_fd = write(file2, buffer, len_f1);
-
 		if (file2 == -1 || write_fd == -1)
 		{
 			close(file1);
@@ -39,14 +35,12 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-
 	close_fd = close(file1);
 	if (close_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file1);
 		exit(100);
 	}
-
 	close_fd = close(file2);
 	if (close_fd == -1)
 	{
