@@ -17,7 +17,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index >= max_size)
 		return (-1);
 
-	*n = *n | binary_number;
+	*n |= binary_number;
 
 	return (1);
 }
