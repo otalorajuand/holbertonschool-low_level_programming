@@ -12,11 +12,27 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned int index = 0;
 	char *res = NULL;
+	int flag = 0;
+	hash_node_t *current = NULL;
+
+	if (ht == NULL)
+		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
 
 	if (ht->array[index] != NULL)
-		res = ht->array[index]->value;
+	{
+		current = ht->array[index];
+		while (flag == 0)
+		{
+			if (strcmp(current->key, key) == 0)
+			{
+				res = current->value;
+				flag = 1;
+			}
+			current = current->next;
+		}
+	}
 	else
 		return (NULL);
 
