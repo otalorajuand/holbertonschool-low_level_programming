@@ -14,10 +14,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned int index = 0;
 	hash_node_t *node = NULL;
 
-	if (strcmp(key, "") == 0)
+	if (strcmp(key, "") == 0 || ht == NULL)
 		return (0);
 
 	node = malloc(sizeof(hash_node_t));
+
+	if (node == NULL)
+		return (0);
 
 	node->key = strdup((char *)key);
 	node->value = strdup((char *)value);
