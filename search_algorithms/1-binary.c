@@ -42,26 +42,21 @@ int binary_search(int *array, size_t size, int value)
 	lo = 0;
 	hi = (int)size - 1;
 
-	print_array(array, lo, hi);
-	while (lo <= hi)
+	while (lo < hi)
 	{
 		medium_index = floor((lo + hi) / 2);
 
-		if (array[medium_index] < value)
-		{
-			lo = medium_index + 1;
-			print_array(array, lo, hi);
-		}
-		else if (array[medium_index] > value)
+		if (value < array[medium_index])
 		{
 			hi = medium_index - 1;
 			print_array(array, lo, hi);
 		}
-		else
+		else if (value > array[medium_index])
 		{
+			lo = medium_index + 1;
+			print_array(array, lo, hi);
+		} else
 			return (medium_index);
-		}
 	}
 	return (-1);
 }
-
