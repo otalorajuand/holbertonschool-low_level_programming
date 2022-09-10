@@ -40,7 +40,10 @@ int jump_search(int *array, size_t size, int value)
 		lo = hi;
 		hi += jump;
 		if (hi >= (int)size)
+		{
+			printf("Value checked array[%d] = [%d]\n", lo, array[lo]);
 			break;
+		}
 		printf("Value checked array[%d] = [%d]\n", lo, array[lo]);
 	}
 
