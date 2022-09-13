@@ -89,6 +89,9 @@ int exponential_search(int *array, size_t size, int value)
 {
 	int upper_bound = 0;
 
+	if (!array)
+		return (-1);
+
 	upper_bound = 1;
 	while (upper_bound < (int)size && array[upper_bound] < value)
 	{
