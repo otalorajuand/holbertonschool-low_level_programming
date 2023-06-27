@@ -1,5 +1,10 @@
 # holbertonschool-low_level_programming
 
+![Contributors](https://img.shields.io/github/contributors/otalorajuand/holbertonschool-low_level_programming?style=plastic)
+![Forks](https://img.shields.io/github/forks/otalorajuand/holbertonschool-low_level_programming)
+![Stars](https://img.shields.io/github/stars/otalorajuand/holbertonschool-low_level_programming)
+![Languages](https://img.shields.io/github/languages/count/otalorajuand/holbertonschool-low_level_programming)
+
 > This is a repository of low-level projects, where I explore the C language programming, Bash, and Linux commands. The objective is to learn low-level concepts and apply them in practical projects. Also, I made this project to build the project of building a Shell interpreter, in order to understand the fundamental concepts of the computer.
 
 ## Author
